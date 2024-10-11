@@ -43,6 +43,7 @@ const TodoItem = ({
       {/* Edit & Delete Btn */}
       <div className="flex gap-4 text-xl">
         <button
+          data-testid="edit-btn" //for testing
           className="hover:text-green-600 transition-colors"
           onClick={() => {
             setSelectedTodoIndex(index);
@@ -52,6 +53,7 @@ const TodoItem = ({
           <LuPencil />
         </button>
         <button
+          data-testid="delete-btn" //for testing
           className="hover:text-red-600 transition-colors"
           onClick={() => handleDel(index)}
         >

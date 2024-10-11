@@ -73,6 +73,7 @@ export default function Home() {
           <div className="flex justify-center">
             <div className="w-1/2">
               <input
+                data-testid="todo-input"
                 value={todoInput}
                 onChange={(e) => setTodoInput(e.target.value)}
                 type="text"
@@ -82,6 +83,7 @@ export default function Home() {
               />
             </div>
             <button
+              data-testid="add-edit-btn"
               type="submit"
               className="py-1 px-4 bg-orange-400 hover:opacity-75 transition-opacity"
             >
